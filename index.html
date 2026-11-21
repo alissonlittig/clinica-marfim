@@ -27,10 +27,11 @@
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="top">
-  <a class="brand" href="#topo" aria-label="Marfim Odontologia, início">
+  <a class="brand" href="#topo">
     <svg width="26" height="30" viewBox="0 0 200 240" aria-hidden="true"><use href="#dente"/></svg>
-    <span>Marfim<small>Odontologia</small></span>
+    <span>Marfim <small>Odontologia</small></span>
   </a>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span class="sr">Menu</span><i></i><i></i></button>
   <nav class="nav" id="menu" aria-label="Principal">
     <a href="#tratamentos">Tratamentos</a>
     <a href="#equipe">Equipe</a>
@@ -38,7 +39,6 @@
     <a href="#chegar">Como chegar</a>
   </nav>
   <a class="btn btn-sm" href="https://wa.me/message/EXEMPLO?text=Ol%C3%A1!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Marfim." rel="noopener">Agendar</a>
-  <button class="burger" type="button" aria-expanded="false" aria-controls="menu"><span class="sr">Menu</span><i></i><i></i></button>
 </header>
 
 <main id="conteudo">
@@ -113,9 +113,9 @@
   <div class="wrap">
     <h2 id="h-eq">Quem cuida do seu sorriso.</h2>
     <ul class="team">
-      <li><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M0 140V60C0 22 28 0 60 0s60 22 60 60v80z" fill="#0F2A2C"/><text x="60" y="92" text-anchor="middle" font-size="44" fill="#EEF3F2" font-family="Red Hat Display,sans-serif" font-weight="700">HD</text></svg><h3>Dra. Helena Duarte</h3><p>Implantodontia e reabilitação</p></li>
-      <li><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M0 140V60C0 22 28 0 60 0s60 22 60 60v80z" fill="#BF4630"/><text x="60" y="92" text-anchor="middle" font-size="44" fill="#fff" font-family="Red Hat Display,sans-serif" font-weight="700">CM</text></svg><h3>Dr. Caio Menezes</h3><p>Ortodontia e alinhadores</p></li>
-      <li><svg viewBox="0 0 120 140" aria-hidden="true"><path d="M0 140V60C0 22 28 0 60 0s60 22 60 60v80z" fill="#CFE0DD"/><text x="60" y="92" text-anchor="middle" font-size="44" fill="#0F2A2C" font-family="Red Hat Display,sans-serif" font-weight="700">NL</text></svg><h3>Dra. Nara Lopes</h3><p>Dentística, clareamento e lentes</p></li>
+      <li><div class="av" style="background:#0F2A2C;color:#EEF3F2" aria-hidden="true">HD</div><h3>Dra. Helena Duarte</h3><p>Implantodontia e reabilitação</p></li>
+      <li><div class="av" style="background:#BF4630;color:#FFFFFF" aria-hidden="true">CM</div><h3>Dr. Caio Menezes</h3><p>Ortodontia e alinhadores</p></li>
+      <li><div class="av" style="background:#CFE0DD;color:#0F2A2C" aria-hidden="true">NL</div><h3>Dra. Nara Lopes</h3><p>Dentística, clareamento e lentes</p></li>
     </ul>
   </div>
 </section>
@@ -184,11 +184,12 @@
 <footer class="foot">
   <div class="wrap">
     <p><strong>Marfim Odontologia</strong> · Rua das Araucárias, 100, Batel, Curitiba, PR</p>
+    <p><button type="button" class="rm" aria-pressed="false">Reduzir movimento</button></p>
     <p class="demo">Modelo de demonstração: marca, nomes, avaliações e dados são fictícios. Registro do responsável técnico (CRO-PR): a informar pelo cliente.</p>
   </div>
 </footer>
 
-<div class="dock"><a class="btn btn-block" href="https://wa.me/message/EXEMPLO?text=Ol%C3%A1!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Marfim." rel="noopener">Agendar pelo WhatsApp</a></div>
+<div class="dock" role="region" aria-label="Agendamento rápido"><a class="btn btn-block" href="https://wa.me/message/EXEMPLO?text=Ol%C3%A1!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Marfim." rel="noopener">Agendar pelo WhatsApp</a></div>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
